@@ -1,0 +1,25 @@
+<form name="myForm">
+    <div class="form-group">
+        <label>Seleccione un Producto a actualizar</label>
+        <select cam-variable-name="producto" class="form-control"
+                cam-variable-type="String"
+                cam-choices="productos">
+        </select>
+        <br/>
+        <label>Actualizar stock de otro producto</label>
+        <input class="form-control" type="checkbox"
+               cam-variable-name="seguirActualizando"
+               cam-variable-type="Boolean"
+               name="seguirActualizando">
+        <br/>
+        <label>Incrementar Stock en</label>
+        <input class="form-control" type="text"
+               cam-variable-name="stock"
+               cam-variable-type="Integer"
+               name="stock" required="true">
+        <br/>
+
+    </div>
+
+</form>
+

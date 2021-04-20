@@ -1,0 +1,19 @@
+<form name="myForm">
+    <div class="form-group">
+        <label for="direccion">Dirección</label>
+        <input class="form-control" type="text"
+               cam-variable-name="direccion"
+               cam-variable-type="String"
+               name="direccion" readonly="true">
+    <br/>
+        <label for="costoEnvio">Costo de Envío</label>
+        <input class="form-control" type="text"
+               cam-variable-name="costoEnvio"
+               cam-variable-type="Double"
+               name="costoEnvio">
+        <span ng-show="myForm.costoEnvio.$error.camVariableType">
+        Solo se acepta números con (.) decimal
+        </span>
+    </div>
+</form>
+

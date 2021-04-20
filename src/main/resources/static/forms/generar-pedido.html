@@ -1,0 +1,26 @@
+<form name="myForm">
+    <div class="form-group">
+        <label>Seleccione un Producto</label>
+        <select cam-variable-name="producto" class="form-control"
+                cam-variable-type="String"
+                cam-choices="productos">
+        </select>
+        <br/>
+        <label>Agregar otro producto</label>
+        <input class="form-control" type="checkbox"
+               cam-variable-name="seguirComprando"
+               cam-variable-type="Boolean"
+               name="seguirComprando">
+        <br/>
+        <label>Cantidad</label>
+        <input class="form-control" type="text"
+               cam-variable-name="depeCantidad"
+               cam-variable-type="Integer"
+               name="depeCantidad" required="true">
+        <br/>
+
+
+    </div>
+
+</form>
+
